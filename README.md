@@ -17,7 +17,7 @@ I am a student currently completing my Class 12 (ISC Board), with a strong inter
 - Development Skills: Problem-solving, Web development basics (if applicable)
 
 ## 📫 Contact
-Feel free to connect with me on [LinkedIn](www.linkedin.com/in/ayaan-kazi-22439125a) or explore more of my work on [GitHub](https://github.com/TheAorusX)!
+Feel free to connect with me on [LinkedIn](www.linkedin.com/in/the-ayaan-kazi-062180ak) or explore more of my work on [GitHub](https://github.com/TheAorusX)!
 
 ---
 
