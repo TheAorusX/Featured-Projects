@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <div style="border:2px solid white; text-align: center; font-size: 30px;margin: 8px;" class="container">TO DO LIST</div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tasks Container -->
+    <div id="tasks-container"></div>
+  
+    <!-- Task Template (Hidden) -->
+    <template id="task-template">
+      <div class="task add-task" style="margin: 10px 0;">
+        <input type="checkbox" />
+        <input type="text" placeholder="Add new task" oninput="handleInput(this)" />
+        <span class="delete-btn" onclick="deleteTask(this)">🗑️</span>
+      </div>
+    </template>
+  
+    <!-- "Anything More?" Button -->
+    <div id="anything-more" class="anything-more" onclick="addNewTask()" style="color: blue; cursor: pointer; margin: 5px 0 15px 30px;">
+      Anything More?
+    </div>
+  
+    <script>
+      const tasksContainer = document.getElementById('tasks-container');
+      const taskTemplate = document.getElementById('task-template');
+      const anythingMore = document.getElementById('anything-more');
+  
+      function handleInput(input) {
+        const value = input.value.trim();
+        if (value !== "") {
+          tasksContainer.appendChild(anythingMore);
+        }
+      }
+  
+      function addNewTask() {
+        anythingMore.remove(); // Remove before appending new task
+        const clone = taskTemplate.content.cloneNode(true);
+        tasksContainer.appendChild(clone);
+        tasksContainer.appendChild(anythingMore); // Add under newest task
+      }
+  
+      function deleteTask(button) {
+        const taskDiv = button.closest('.add-task');
+        taskDiv.remove();
+        if (tasksContainer.children.length > 0) {
+          tasksContainer.appendChild(anythingMore);
+        } else {
+          addNewTask(); // Always have one task to start with
+        }
+      }
+  
+      // Initial Task
+      addNewTask();
+    </script>
+  
+  </body>
+      
+<script src="script.js"></script>
+</html>

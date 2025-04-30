@@ -1,0 +1,33 @@
+html, body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #4f4f4f;
+    color: #ffffff;
+    text-align: center;
+    background-image:url('https://wallpapershome.com/images/pages/pic_h/26424.jpg');
+    margin:1px;;
+    .task {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .task input[type="text"] {
+        margin-left: 10px;
+        padding: 5px;
+        flex: 1;
+      }
+      .delete-btn {
+        margin-left: 10px;
+        cursor: pointer;
+        color: red;
+      }
+      .anything-more {
+        color: blue;
+        cursor: pointer;
+        margin: 5px 0 15px 30px;
+        display: inline-block;
+      }
+        .anything-more:hover {
+            text-decoration: underline;
+        }      
+}

@@ -3,16 +3,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f3f4f6;
+    background: #00000000;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
 .calculator {
-    background: #fff;
+    background: #080808;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgb(121, 121, 121);
     width: 300px;
 }
 
@@ -35,14 +35,15 @@ button {
     height: 50px;
     font-size: 20px;
     border: none;
+    -webkit-text-fill-color: #ff0000;
     border-radius: 8px;
-    background: #e0e0e0;
+    background: #707070;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 button:hover {
-    background: #d6d6d6;
+    background: #ffffff;
 }
 
 button:active {
