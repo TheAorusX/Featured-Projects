@@ -5,7 +5,10 @@ html, body {
     color: #ffffff;
     text-align: center;
     background-image:url('https://wallpapershome.com/images/pages/pic_h/26424.jpg');
-    margin:1px;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:1px;
     .task {
         display: flex;
         align-items: center;
